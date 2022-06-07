@@ -11,7 +11,7 @@ export default {
         sex: '',
         nation: '',
         birthday: '',
-        radate: '',
+        rdate: '',
         id_type: '',
         id_num: '',
         native_place: '',

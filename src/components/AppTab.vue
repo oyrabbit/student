@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -27,7 +27,7 @@ const data = ref([
   },
   {
     id: 2,
-    title: '综合评测·',
+    title: '综合评测',
     path: '/measures',
   },
   {
@@ -48,8 +48,13 @@ const data = ref([
 ])
 const change = (index, path) => {
   currentIndex.value = index
+  sessionStorage.setItem('current_index', index)
   router.push(path)
 }
+
+onMounted(() => {
+  currentIndex.value = sessionStorage.getItem('current_index')
+})
 // export default {
 //   name: 'AppTab',
 // }

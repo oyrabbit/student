@@ -14,7 +14,7 @@
             v-model="form.number"
             name="number"
             type="text"
-            placeholder="请输入手机号"
+            placeholder="请输入学号"
           />
         </div>
         <div class="error" v-if="errors.number">
@@ -81,7 +81,7 @@ const login = async () => {
           sex,
           nation,
           birthday,
-          radate,
+          rdate,
           id_type,
           id_num,
           native_place,
@@ -98,7 +98,7 @@ const login = async () => {
           sex,
           nation,
           birthday,
-          radate,
+          rdate,
           id_type,
           id_num,
           native_place,

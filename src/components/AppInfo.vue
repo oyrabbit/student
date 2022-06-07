@@ -25,6 +25,7 @@ const profile = computed(() => {
 const router = useRouter()
 const logout = () => {
   store.commit('user/setUser', {})
+  sessionStorage.setItem('current_index', '')
   router.push('/login')
 }
 </script>
