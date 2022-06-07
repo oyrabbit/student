@@ -1,4 +1,4 @@
-# .github/workflows/nodejs.yml
+# .github/workflows/vue.yml
 name: Vue CI
 
 on:
