@@ -54,7 +54,7 @@ Gettimetable().then((data) => {
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 450px;
+    padding: 0 25%;
     div {
       text-align: center;
       color: #fff;
